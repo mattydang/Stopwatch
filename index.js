@@ -14,7 +14,7 @@ function start(){
 }
 function stop(){
 
-    if(!isRunning){
+    if(isRunning){
         clearInterval(timer);
         elaspedTime = Date.now() - startTime;
         isRunning = false;
